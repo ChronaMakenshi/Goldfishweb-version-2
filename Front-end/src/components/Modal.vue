@@ -223,18 +223,18 @@ export default {
               <span class="error-text" v-if="errors.adresse_site">{{ errors.adresse_site }}</span>
             </div>
             <div class="form-group">
-              <div class="">
+              <div>
                 <label class="form-label" for="captcha">Captcha *</label>
                 <div class="captcha-group">
                   <span class="captcha-question">{{ formData.captchaOperation }} =</span>
-                  <input id="captcha" v-model="formData.captcha" class="form-input" type="text">
+                  <input id="captcha" v-model="formData.captcha" class="form-input" type="number">
                 </div>
               </div>
               <div v-if="errors.captcha" id="alert-border-2" class="error-alert" role="alert">
                 <svg aria-hidden="true" class="error-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                 </svg>
-                <div class="">
+                <div>
                   {{ errors.captcha }}
                 </div>
               </div>
